@@ -1,0 +1,131 @@
+{
+  "scope": "Selected public source objects only. Source identity does not establish implementation, installation, native qualification or activation. Pins are historical and do not track moving defaults.",
+  "sources": [
+    {
+      "repository": "https://github.com/relux-works/swarma-user-manager",
+      "commit": "e1719ea6aa42c2af601b6153c3da53c6bcfd3802",
+      "path": "README.md",
+      "sha256": "f977b29ef8f9d6dda6284a3c80ed4ee416b62888ba2c89b905984a00ea9f1dfa",
+      "bytes": 50664
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-user-manager",
+      "commit": "e1719ea6aa42c2af601b6153c3da53c6bcfd3802",
+      "path": "docs/linux-backend.md",
+      "sha256": "a3d81cf6c08490a91b24a067024dd3d3603eeb100adf755a561de9d4b67f15d6",
+      "bytes": 70141
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-user-manager",
+      "commit": "e1719ea6aa42c2af601b6153c3da53c6bcfd3802",
+      "path": "internal/linuxos/network_linux.go",
+      "sha256": "1259ac77e8593a93f35273715b5ff0e04d79b33214bba1b5c625777a2a4b551a",
+      "bytes": 3431
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-user-manager",
+      "commit": "e1719ea6aa42c2af601b6153c3da53c6bcfd3802",
+      "path": "internal/linuxos/capabilities_linux.go",
+      "sha256": "98f87c9f96e91aaba313a8f4c31b7117aae0ce00c4954163c8f78b528f63f6ab",
+      "bytes": 2256
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-user-manager",
+      "commit": "e1719ea6aa42c2af601b6153c3da53c6bcfd3802",
+      "path": "internal/linuxos/qualification_checks_linux.go",
+      "sha256": "93f8ba47e10f98d27f0baf2b7de0be5bc0aedc62894e1995e9f0eebfc7cb5f0e",
+      "bytes": 6854
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-keymaker",
+      "commit": "14532907e28cbfda6d049955e5e2b7de0bf42554",
+      "path": "README.md",
+      "sha256": "22fcf8345ad91b2087440fc41d8b98b4143ee854aca6b0a7a5ed79d054cbb7d6",
+      "bytes": 48419
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-keymaker",
+      "commit": "14532907e28cbfda6d049955e5e2b7de0bf42554",
+      "path": "spec/keymaker-station-caller.md",
+      "sha256": "ba785b2f13cff37478d6ced975eacef559cfdf10c44ebb6943832cee89dca607",
+      "bytes": 75749
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-credential-broker",
+      "commit": "8b45a165fa528395da5f8b098ac722427c90dce5",
+      "path": "README.md",
+      "sha256": "777d338023ba67438011d79e40bed08702a9ad1bdd4510e09cc2883c12ddafb7",
+      "bytes": 39632
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-credential-broker",
+      "commit": "8b45a165fa528395da5f8b098ac722427c90dce5",
+      "path": "spec/v0-codex-refresher.md",
+      "sha256": "26ae4fa97651cf85413b41422a9a723f075588801eecf092a0011ef4beea1899",
+      "bytes": 71467
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-credential-broker",
+      "commit": "8b45a165fa528395da5f8b098ac722427c90dce5",
+      "path": "spec/broker.md",
+      "sha256": "9349d9784828afd7f3caadeda5e8d409628e60167b2790c2570c78d9eebbba05",
+      "bytes": 163846
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-dispatcher",
+      "commit": "07a9b0daabcb61555a27abbda939709166ed1a65",
+      "path": "README.md",
+      "sha256": "5655d2c1908bc2110e46db1afe97f9434a0d323034a5562e06680833df2fe172",
+      "bytes": 26942
+    },
+    {
+      "repository": "https://github.com/relux-works/waggle",
+      "commit": "aed882686068a6c7fb9e12a8da9e260497470b37",
+      "path": "spec/swarm-envelope-2.md",
+      "sha256": "5df0943704ee42b3b5ccb10b2124c345562eb5ee6c5456a49022e2297ef4d4b3",
+      "bytes": 121872
+    },
+    {
+      "repository": "https://github.com/relux-works/waggle",
+      "commit": "aed882686068a6c7fb9e12a8da9e260497470b37",
+      "path": "spec/waggle.md",
+      "sha256": "4fb8264df5d5149e9c4dfb53a738c0d1827ec1a429fbb9ffda94f72ed731081e",
+      "bytes": 75210
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-owner-registry",
+      "commit": "f15f4ecdd1ef7f4f08767e498bbad9f717be5357",
+      "path": "design/owner-registry.md",
+      "sha256": "1c6b74f402cf03493349c3c6274e658d5e0bc2a1bed649e96dc8daa6c3533318",
+      "bytes": 163481
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-witness",
+      "commit": "29df43b7e8b26d1bce7101c5fc73e8c9b8050b99",
+      "path": "spec/wire-v1.md",
+      "sha256": "1a10be857f0d7c37c77ddf811e2360a364f36ebb6507d14cc3886c61914aa831",
+      "bytes": 10717
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-witness",
+      "commit": "29df43b7e8b26d1bce7101c5fc73e8c9b8050b99",
+      "path": "spec/qualifiedtime-v1.md",
+      "sha256": "3c76e32a216b6832e1af087d102eae52e87fcf997265f249d18dc81ed854ba1a",
+      "bytes": 8147
+    },
+    {
+      "repository": "https://github.com/relux-works/curator-spec",
+      "commit": "88b0d8615a5df8728e0e9540a9edd708c0ca5660",
+      "path": "cips/CIP-0025-execution-isolation-contract.md",
+      "sha256": "bbcfa254ca2d506c5faea24bfcc577cddba9dfc197dd7a52726c8bfb8a4d0d2b",
+      "bytes": 110295
+    },
+    {
+      "repository": "https://github.com/relux-works/swarma-dispatcher",
+      "commit": "07a9b0daabcb61555a27abbda939709166ed1a65",
+      "path": "spec/dispatcher.md",
+      "sha256": "83d6d289dd42094f2fa009046c614b3578388e85d4be459d2e805ffe05b73c60",
+      "bytes": 240812
+    }
+  ]
+}

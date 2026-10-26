@@ -1,0 +1,23 @@
+digraph Integration {
+  graph [label="Logical custody topology: separate authority and histories", labelloc=t, rankdir=TB, bgcolor="white", fontname="Helvetica", fontsize=18, pad=0.3, nodesep=0.3, ranksep=0.5];
+  node [shape=box, style="rounded,filled", fillcolor="#edf3fa", color="#64748b", fontname="Helvetica", fontsize=12, margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=10, color="#475569"];
+  owner [label="Personal owner root\nSeparate from online service keys"];
+  registry [label="Registry writer + isolated online signer\nLater full acceptance"];
+  primary [label="Primary witness\nProtected original records"];
+  custodian [label="Synchronous independent custodian\nExact predecessor + authenticated fresh head"];
+  exclusion [label="Separately enforced old-instance exclusion\nAll write / sign / use release paths"];
+  keymaker [label="Keymaker bootstrap / enrollment\nOwn history, credentials, use and budget"];
+  broker [label="Broker time and store rollback\nTwo separate histories and enrollments"];
+  manager [label="User-manager later PC2 scope\nOrdinary initial operations are non-consumers"];
+  owner -> registry [label="separate authority"];
+  registry -> primary [label="witnessed publication"];
+  primary -> custodian [label="synchronous confirmation"];
+  custodian -> keymaker [label="actual initial consumer"];
+  custodian -> broker [label="actual initial consumer"];
+  custodian -> manager [label="later / conditional", style=dashed];
+  exclusion -> primary;
+  exclusion -> keymaker;
+  exclusion -> broker;
+  exclusion -> manager [label="later / conditional", style=dashed];
+}

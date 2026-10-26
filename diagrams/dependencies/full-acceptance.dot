@@ -1,0 +1,28 @@
+digraph Integration {
+  graph [label="Full acceptance: signed result and current authority", labelloc=t, rankdir=TB, bgcolor="white", fontname="Helvetica", fontsize=18, pad=0.3, nodesep=0.3, ranksep=0.5];
+  node [shape=box, style="rounded,filled", fillcolor="#edf3fa", color="#64748b", fontname="Helvetica", fontsize=12, margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=10, color="#475569"];
+  station [label="Qualified station + strict release\nWhole-account response"];
+  caller [label="Narrowed caller delegation\nTyped purpose + current generation"];
+  broker [label="Broker binding + grant\nFinal-material revocation fence"];
+  dispatch [label="Dispatcher single effect\nDurable receipt + bounded result"];
+  message [label="Signed message + attestation\nUnchanged Matrix delivery"];
+  custody [label="Independent custody + time\nFresh heads + original caller budgets"];
+  registry [label="Isolated registry-owner signer\nWitnessed snapshot + journal"];
+  currency [label="Agreed external-root currency\nGrant and operator root inclusion"];
+  verify [label="Independent verifier\nFreshness + replay + effect currentness"];
+  acceptance [label="Full acceptance evidence\nSecurity stop within five minutes or tighter"];
+  station -> caller;
+  caller -> dispatch;
+  broker -> dispatch;
+  station -> dispatch;
+  dispatch -> message;
+  custody -> registry;
+  registry -> message;
+  registry -> verify;
+  currency -> verify;
+  message -> verify;
+  verify -> acceptance;
+  station -> acceptance;
+  broker -> acceptance;
+}

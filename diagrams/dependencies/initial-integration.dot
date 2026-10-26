@@ -1,0 +1,29 @@
+digraph Integration {
+  graph [label="Initial limited integration: required dependencies", labelloc=t, rankdir=TB, bgcolor="white", fontname="Helvetica", fontsize=18, pad=0.3, nodesep=0.3, ranksep=0.5];
+  node [shape=box, style="rounded,filled", fillcolor="#edf3fa", color="#64748b", fontname="Helvetica", fontsize=12, margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=10, color="#475569"];
+  authority [label="Reviewed owner scope\nProtected dispatcher policy"];
+  custody [label="Shared independent custody\nTrusted time + old-instance exclusion"];
+  station [label="Qualified active station\nOperator registration + generation"];
+  setup [label="Closed setup + zero broker-wide leases\nWorker status + foreign-UID control"];
+  caller [label="Qualified typed caller\nBootstrap + protected association"];
+  broker [label="Qualified activated broker v0\nWorker-only UID lease; original ceiling"];
+  dispatch [label="Dispatcher reservation + one effect\nExisting-generation receiver commit"];
+  executor [label="Approved executor + immutable FD3\nClosed argv and prompt stdin"];
+  result [label="Authenticated bounded result\nProtected durable outcome + retention"];
+  stop [label="Original-bound whole-account stop\nSeparate lease / token / cleanup debts"];
+  authority -> setup;
+  authority -> dispatch;
+  custody -> caller;
+  custody -> broker;
+  station -> setup;
+  setup -> caller;
+  caller -> dispatch [label="authentication only"];
+  station -> dispatch [label="existing generation"];
+  broker -> executor [label="worker-owned lease"];
+  dispatch -> executor;
+  executor -> result;
+  dispatch -> stop [label="independent deadline stop"];
+  executor -> stop;
+  result -> stop [label="retain independent obligations"];
+}

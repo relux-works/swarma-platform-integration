@@ -1,0 +1,8 @@
+.temp/
+.task-board/
+.goals/
+.progress-pair-generation
+.env
+.env.*
+*.log
+.DS_Store
